@@ -140,3 +140,38 @@ footer {
   color: #d2691e;
   transform: scale(1.2);
 }
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .contact-content h1 {
+    font-size: 32px; /* smaller heading */
+  }
+
+  .contact-form {
+    width: 90%;       /* take most of the screen width */
+    margin: 0 auto;   /* center it */
+    gap: 12px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 900px) {
+  .contact-content h1 {
+    font-size: 40px;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
