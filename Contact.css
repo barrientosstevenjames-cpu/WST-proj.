@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fdfdf6, #9caf88);
+  color: #2f4f4f;
+}
+
+/* Nav bar */
+header {
+  width: 100%;
+  background: #2f4f4f;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e1ad01;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fdfdf6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #d2691e;
+}
+
+/* Contact content */
+.contact-content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-content h1 {
+  font-size: 48px;
+  color: #2f4f4f;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 2px solid #2f4f4f;
+  border-radius: 8px;
+  font-family: 'Pacifico', cursive;
+}
+
+.contact-form button {
+  background: #2f4f4f;
+  color: #fdfdf6;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 28px;
+  border: 2px solid #e1ad01;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #d2691e;
+  box-shadow: 0 0 12px #e1ad01;
+}
+
+/* Footer */
+footer {
+  background: #2f4f4f;
+  color: #fdfdf6;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #e1ad01;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #d2691e;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #e1ad01;
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d2691e;
+  transform: scale(1.2);
+}
