@@ -1,0 +1,40 @@
+
+.description {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    text-align: center;
+    background: rgba(253, 253, 246, 0.75);
+    border: 2px solid #e1ad01;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(47, 79, 79, 0.15);
+}
+
+.description h3 {
+    color: #2f4f4f;
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.description p {
+    color: #2f4f4f;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+    .description {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    .description h3 {
+        font-size: 23px;
+    }
+
+    .description p {
+        font-size: 15px;
+    }
+}
