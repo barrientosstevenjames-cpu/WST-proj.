@@ -1,0 +1,310 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Page */
+body {
+    font-family: 'Pacifico', cursive;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fdfdf6, #9caf88);
+    color: #2f4f4f;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    background: #2f4f4f;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #e1ad01;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #fdfdf6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+    color: #e1ad01;
+}
+
+/* Main Content */
+.message-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+}
+
+/* Message Card */
+.message-card {
+    width: 100%;
+    max-width: 650px;
+    background: #fdfdf6;
+    padding: 35px;
+    border: 2px solid #e1ad01;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(47, 79, 79, 0.15);
+}
+
+/* Heading */
+.message-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.message-heading h1 {
+    font-size: 44px;
+    color: #2f4f4f;
+    margin-bottom: 8px;
+}
+
+.message-heading h2 {
+    font-size: 24px;
+    color: #d2691e;
+    margin-bottom: 12px;
+}
+
+.message-heading p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Form Fields */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #9caf88;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #2f4f4f;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2f4f4f;
+    box-shadow: 0 0 0 3px rgba(47, 79, 79, 0.15);
+}
+
+/* Text Area */
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+/* Send Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid #e1ad01;
+    border-radius: 8px;
+    background: #2f4f4f;
+    color: #fdfdf6;
+    font-family: 'Pacifico', cursive;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #d2691e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(225, 173, 1, 0.3);
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #e1ad01;
+    outline-offset: 4px;
+}
+
+/* Form Status */
+#formStatus {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.status-message {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #e7eee1;
+    color: #2f4f4f;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background: #2f4f4f;
+    color: #fdfdf6;
+    text-align: center;
+    padding: 22px 15px;
+    border-top: 2px solid #e1ad01;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+
+.footer-links a {
+    color: #e1ad01;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d2691e;
+}
+
+.footer-note {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .navbar {
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .message-card {
+        max-width: 600px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 10px 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .message-container {
+        padding: 25px 14px;
+        align-items: flex-start;
+    }
+
+    .message-card {
+        padding: 24px 18px;
+        border-radius: 12px;
+    }
+
+    .message-heading h1 {
+        font-size: 34px;
+    }
+
+    .message-heading h2 {
+        font-size: 20px;
+    }
+
+    .message-heading p {
+        font-size: 14px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
